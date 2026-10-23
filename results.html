@@ -1,0 +1,69 @@
+<!doctype html><html lang=ja><head><meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name=theme-color content="#14052e"><link rel="apple-touch-icon" href="data:,">
+<title>成績 | 競馬予想</title>
+<style>
+:root{--fg:#ffffff;--mute:rgba(255,255,255,.66);--line:rgba(255,255,255,.14);--glass:rgba(255,255,255,.09);--glass2:rgba(255,255,255,.16);
+--pink:#ff5fa2;--yellow:#ffd93d;--mint:#5df2c3;--sky:#5bb8ff;--violet:#b48bff;--orange:#ff9f43;--red:#ff5d5d}
+*{box-sizing:border-box}html{background:#14052e}
+body{margin:0;color:var(--fg);font:15px/1.5 "Hiragino Maru Gothic ProN","SF Pro Rounded",-apple-system,"Hiragino Sans",sans-serif;padding-bottom:84px;min-height:100vh;
+background:radial-gradient(1200px 600px at -10% -10%,#ff5fa2 0%,rgba(255,95,162,0) 60%),radial-gradient(900px 600px at 110% 0%,#5bb8ff 0%,rgba(91,184,255,0) 55%),
+radial-gradient(900px 700px at 50% 110%,#7b2ff7 0%,rgba(123,47,247,0) 60%),linear-gradient(160deg,#1b0a3d 0%,#14052e 50%,#0b1a3a 100%);background-attachment:fixed}
+a{color:var(--sky);text-decoration:none}
+header{position:sticky;top:0;z-index:5;padding:14px 16px 10px;display:flex;gap:10px;align-items:center;background:linear-gradient(180deg,rgba(20,5,46,.92),rgba(20,5,46,.6) 80%,rgba(20,5,46,0));backdrop-filter:blur(12px)}
+header h1{font-size:20px;margin:0;flex:1;font-weight:800;letter-spacing:.02em;background:linear-gradient(90deg,#fff,#ffd93d);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav.tabs{position:fixed;bottom:12px;left:12px;right:12px;display:flex;background:rgba(20,5,46,.78);border:1px solid var(--line);border-radius:22px;padding:6px;backdrop-filter:blur(16px);box-shadow:0 10px 30px rgba(0,0,0,.35);z-index:6}
+nav.tabs a{flex:1;text-align:center;padding:10px 0;color:var(--mute);font-size:13px;font-weight:700;border-radius:16px}nav.tabs a.on{color:#14052e;background:linear-gradient(135deg,var(--yellow),var(--pink))}
+main{padding:6px 14px 10px;max-width:780px;margin:0 auto}
+.card{background:var(--glass);border:1px solid var(--line);border-radius:20px;padding:14px;margin-bottom:12px;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 8px 24px rgba(0,0,0,.18)}
+.card h2{font-size:15px;margin:0 0 8px;font-weight:800}.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.mute{color:var(--mute);font-size:13px}
+.pill{display:inline-block;padding:2px 10px;border-radius:999px;font-size:12px;font-weight:800;color:#14052e}
+.pill.鉄板{background:linear-gradient(135deg,#ffd93d,#ff9f43)}.pill.狙い目{background:linear-gradient(135deg,#5df2c3,#5bb8ff)}.pill.大穴{background:linear-gradient(135deg,#b48bff,#ff5fa2)}
+.tag{display:inline-block;padding:1px 7px;border-radius:8px;font-size:11px;font-weight:700;background:var(--glass2);color:var(--fg);margin:1px 2px 0 0;white-space:nowrap}
+.tag.good{background:rgba(93,242,195,.22);color:var(--mint)}.tag.bad{background:rgba(255,93,93,.22);color:#ffb3b3}.tag.today{background:rgba(255,217,61,.25);color:var(--yellow)}
+table{width:100%;border-collapse:collapse;font-size:14px}th,td{padding:7px 4px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap;vertical-align:top}th{color:var(--mute);font-weight:700;font-size:11px;letter-spacing:.04em}
+td.l,th.l{text-align:left}tr.axis td{background:rgba(255,217,61,.10)}tr.partner td{background:rgba(93,242,195,.08)}tr.scratch td{color:var(--mute);text-decoration:line-through}tr.done td{opacity:.75}
+.bar{height:6px;background:rgba(255,255,255,.14);border-radius:3px;overflow:hidden;min-width:48px}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--mint),var(--sky))}.bar.p i{background:linear-gradient(90deg,var(--yellow),var(--pink))}
+button,.btn{background:linear-gradient(135deg,var(--pink),var(--violet));color:#fff;border:0;border-radius:14px;padding:9px 14px;font-size:14px;font-weight:800;box-shadow:0 6px 16px rgba(255,95,162,.3)}
+button.ghost{background:var(--glass2);box-shadow:none;color:var(--fg)}button.sm{padding:4px 10px;font-size:12px}
+input,select{background:rgba(0,0,0,.25);color:var(--fg);border:1px solid var(--line);border-radius:12px;padding:9px 10px;font-size:15px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}.kpi{background:var(--glass);border:1px solid var(--line);border-radius:18px;padding:12px;backdrop-filter:blur(14px)}.kpi b{font-size:26px;display:block;font-weight:900}
+.reason{font-size:11.5px;color:var(--mute);white-space:normal;line-height:1.35}.pos{color:var(--mint)}.neg{color:#ffb3b3}
+details summary{cursor:pointer;color:var(--sky);font-weight:700}
+.daynav{display:flex;gap:6px;overflow-x:auto;padding:4px 0 8px;scrollbar-width:none}.daynav::-webkit-scrollbar{display:none}
+.daynav a{padding:7px 12px;border:1px solid var(--line);border-radius:999px;font-size:13px;font-weight:700;color:var(--fg);background:var(--glass);white-space:nowrap}.daynav a.on{background:linear-gradient(135deg,var(--yellow),var(--pink));color:#14052e;border-color:transparent}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:10px}.hero .box{border-radius:16px;padding:12px;background:var(--glass2)}.hero .box.axis{background:linear-gradient(135deg,rgba(255,217,61,.28),rgba(255,159,67,.18))}.hero .box.partner{background:linear-gradient(135deg,rgba(93,242,195,.25),rgba(91,184,255,.15))}
+@media(max-width:560px){.hero{grid-template-columns:1fr}}.hero .nm{white-space:normal;line-height:1.25}.hero .lab{font-size:11px;color:var(--mute);font-weight:800;letter-spacing:.06em}.hero .nm{font-size:18px;font-weight:900;margin:2px 0}.hero .num{font-size:26px;font-weight:900}
+.racecard{display:flex;gap:10px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line)}.racecard:last-child{border-bottom:0}
+.rno{width:40px;height:40px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:16px;background:var(--glass2);flex-shrink:0}.racecard.flag .rno{background:linear-gradient(135deg,var(--yellow),var(--pink));color:#14052e}
+.racecard .main{flex:1;min-width:0}.racecard .ttl{font-weight:800;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.racecard .sub{font-size:12px;color:var(--mute)}.racecard .ax{font-size:13px}
+.racecard .ax b{color:var(--yellow)}.racecard .ax span{color:var(--mint)}
+.badge{font-size:11px;font-weight:800;padding:2px 8px;border-radius:999px;background:var(--glass2)}
+.an h3{font-size:16px;font-weight:900;margin:14px 0 6px;padding-left:10px;border-left:4px solid var(--yellow);background:linear-gradient(90deg,rgba(255,217,61,.14),transparent);border-radius:4px}
+.an h4{font-size:14px;margin:10px 0 4px;color:var(--mint)}.an ul{margin:4px 0 8px;padding-left:18px}.an li{margin:4px 0;font-size:14.5px;line-height:1.55}.an p{margin:6px 0;font-size:14.5px}
+.an b.hl{color:var(--yellow);font-weight:900}.an .mk{display:inline-block;font-weight:900;padding:0 7px;border-radius:8px;margin-right:2px}
+.an .mk.axis{background:var(--yellow);color:#14052e}.an .mk.partner{background:var(--mint);color:#14052e}.an .mk.third{background:var(--sky);color:#14052e}.an .mk.fourth{background:var(--violet);color:#14052e}
+.an .good{color:var(--mint);font-weight:900}.an .bad{color:#ff8c8c;font-weight:900}.card{overflow:hidden;max-width:100%}.an .tw{overflow-x:auto;max-width:100%;margin:6px 0}.an table.an{font-size:12px;margin:0;width:100%;table-layout:fixed}.an table.an th,.an table.an td{text-align:left;padding:4px 5px;white-space:normal;overflow-wrap:anywhere}.an li,.an p{white-space:normal;overflow-wrap:anywhere}
+.ev{border-radius:14px;padding:10px 12px;margin:6px 0;font-size:14px;line-height:1.5;border-left:5px solid var(--sky);background:rgba(91,184,255,.12)}
+.ev.warn{border-left-color:var(--orange);background:rgba(255,159,67,.16)}.ev.ok{border-left-color:var(--mint);background:rgba(93,242,195,.12)}.ev b{color:var(--yellow)}.ev .k{font-size:11px;font-weight:900;letter-spacing:.06em;color:var(--mute);display:block}
+</style></head><body>
+<header><h1>成績</h1></header>
+<main>
+<div class=card><h2>📊 紙上検証の成績(AIの買い目をそのまま記録)</h2><div class=mute style="font-size:12px">AIが出した「軸馬の複勝」「軸-○の馬連」などを毎レース紙上で記録し、確定後に払戻を自動計算しています。実際の購入記録ではありません。</div></div>
+<div class=grid>
+<div class=kpi><span class=mute>累計 購入</span><b>0<small>円</small></b></div>
+<div class=kpi><span class=mute>累計 払戻</span><b>0<small>円</small></b></div>
+<div class=kpi><span class=mute>回収率</span><b class="neg">0%</b></div>
+<div class=kpi><span class=mute>軸馬 3着内率</span><b>0%<small> /0R</small></b></div>
+</div>
+<div class=card style="margin-top:12px"><h2>月別</h2><table><tr><th class=l>月</th><th>点数</th><th>購入</th><th>払戻</th><th>回収率</th><th>的中率</th></tr>
+</table></div>
+<div class=card><h2>フラグ別</h2><table><tr><th class=l>フラグ</th><th>レース</th><th>購入</th><th>払戻</th><th>回収率</th></tr>
+</table></div>
+<div class=card><h2>モデルの検証成績(2025-07〜2026-10・4375レース)</h2><table>
+<tr><td class=l>軸馬の3着内率</td><td><b>66%</b></td></tr><tr><td class=l>軸-○の馬連的中率</td><td>17%</td></tr>
+<tr><td class=l>1番手の勝率</td><td>33%</td></tr><tr><td class=l>鉄板フラグの勝率</td><td>61%</td></tr></table>
+<div class=mute style="font-size:12px;margin-top:6px">学習に使っていない期間での検証値。回収率は市場並み(控除率どおり)で、「勝てる」ことを示すものではありません。</div></div>
+<div class=card style="font-size:11px;color:var(--mute)">本サイトの予想はAI(機械学習)の計算結果で、的中を保証するものではありません。馬券の購入はご自身の判断と責任でお願いします。20歳未満の方は馬券を購入できません。成績は紙上検証(実際には購入していない記録)を含みます。<br>更新 2026-10-24 07:49</div></main>
+<nav class=tabs><a href="index.html" class="">🏇 予想</a><a href="results.html" class="on">📊 成績</a><a href="about.html" class="">ℹ️ この予想について</a></nav>
+</body></html>
