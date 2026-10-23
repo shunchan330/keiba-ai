@@ -46,92 +46,108 @@ details summary{cursor:pointer;color:var(--sky);font-weight:700}
 .an .good{color:var(--mint);font-weight:900}.an .bad{color:#ff8c8c;font-weight:900}.card{overflow:hidden;max-width:100%}.an .tw{overflow-x:auto;max-width:100%;margin:6px 0}.an table.an{font-size:12px;margin:0;width:100%;table-layout:fixed}.an table.an th,.an table.an td{text-align:left;padding:4px 5px;white-space:normal;overflow-wrap:anywhere}.an li,.an p{white-space:normal;overflow-wrap:anywhere}
 .ev{border-radius:14px;padding:10px 12px;margin:6px 0;font-size:14px;line-height:1.5;border-left:5px solid var(--sky);background:rgba(91,184,255,.12)}
 .ev.warn{border-left-color:var(--orange);background:rgba(255,159,67,.16)}.ev.ok{border-left-color:var(--mint);background:rgba(93,242,195,.12)}.ev b{color:var(--yellow)}.ev .k{font-size:11px;font-weight:900;letter-spacing:.06em;color:var(--mute);display:block}
+
+/* G1強調(公開版) */
+.pill.G1{background:linear-gradient(135deg,#fff3a0,#ffd93d 45%,#ff9f43);color:#3a1a00;font-size:13px;padding:3px 12px;box-shadow:0 0 0 2px rgba(255,217,61,.35),0 4px 14px rgba(255,159,67,.45);letter-spacing:.04em}
+.pill.G2{background:linear-gradient(135deg,#e8e8f0,#b9c2d6);color:#14052e}.pill.G3{background:linear-gradient(135deg,#f0c9a0,#c98b5a);color:#14052e}
+.g1banner{display:block;color:inherit;position:relative;overflow:hidden;border-radius:22px;padding:16px 16px 14px;margin-bottom:12px;border:2px solid rgba(255,217,61,.75);
+background:linear-gradient(135deg,rgba(255,217,61,.32),rgba(255,95,162,.22) 55%,rgba(123,47,247,.25));box-shadow:0 0 0 4px rgba(255,217,61,.12),0 14px 40px rgba(255,159,67,.35);backdrop-filter:blur(14px)}
+.g1banner:before{content:"";position:absolute;inset:-40% -20%;background:conic-gradient(from 90deg,transparent 0 70%,rgba(255,255,255,.22) 80%,transparent 90%);animation:g1spin 6s linear infinite;pointer-events:none}
+@keyframes g1spin{to{transform:rotate(360deg)}}
+.g1banner .k{position:relative;font-size:12px;font-weight:900;letter-spacing:.14em;color:#ffe066}.g1banner .t{position:relative;font-size:24px;font-weight:900;line-height:1.2;margin:2px 0 4px;background:linear-gradient(90deg,#fff,#ffd93d);-webkit-background-clip:text;background-clip:text;color:transparent}
+.g1banner .m{position:relative;font-size:13px;color:var(--fg)}.g1banner .ax{position:relative;margin-top:8px;font-size:15px;font-weight:800}.g1banner .ax b{color:var(--yellow)}.g1banner .ax span{color:var(--mint)}
+.g1banner .go{position:relative;display:inline-block;margin-top:10px;font-size:12px;font-weight:900;padding:6px 12px;border-radius:999px;background:linear-gradient(135deg,var(--yellow),var(--orange));color:#14052e}
+.racecard.g1{margin:6px -8px;padding:12px 8px;border-radius:16px;border:1px solid rgba(255,217,61,.55);background:linear-gradient(135deg,rgba(255,217,61,.18),rgba(255,95,162,.10));box-shadow:inset 0 0 0 1px rgba(255,255,255,.06)}
+.racecard.g1 .rno{background:linear-gradient(135deg,#fff3a0,#ffd93d,#ff9f43);color:#3a1a00;box-shadow:0 4px 12px rgba(255,159,67,.45)}.racecard.g1 .ttl{font-size:17px;color:#ffe066}
+.card.g1card{border:2px solid rgba(255,217,61,.7);background:linear-gradient(135deg,rgba(255,217,61,.22),rgba(255,95,162,.14) 60%,rgba(123,47,247,.18));box-shadow:0 0 0 4px rgba(255,217,61,.12),0 14px 40px rgba(255,159,67,.3)}
+.card.g1card .g1k{font-size:12px;font-weight:900;letter-spacing:.14em;color:#ffe066;margin-bottom:2px}
 </style></head><body>
 <header><h1>AI競馬予想 2026-10-24</h1></header>
 <main>
-<div class="daynav"><a href="day_2026-10-24.html" class="on">10/24(土)</a><a href="day_2026-10-25.html" class="">10/25(日)</a></div>
+<div class="daynav"><a href="day_2026-10-24.html" class="on">10/24(土)</a><a href="day_2026-10-25.html" class="">10/25(日) 👑G1</a></div>
+
 <div class=card><div class=row style="margin-bottom:6px"><span class="pill 狙い目">🎯狙い目 7</span> <span class="pill 大穴">💣大穴 4</span> <span class="pill 鉄板">🔒鉄板 2</span></div>
 </div>
 
 <div class=card><h2>新潟 <span class=mute style="font-weight:400">12R</span></h2>
-<a href="race_202604040301.html" style="color:inherit"><div class="racecard flag ">
+<a href="race_202604040301.html" style="color:inherit"><div class="racecard flag  ">
 <div class=rno>1</div>
 <div class=main><div class=ttl>2歳未勝利 <span class=mute style="font-weight:400">09:45</span></div>
 <div class=sub>ダ1800m ・ 12頭 ・ 稍重</div>
 <div class=ax>◎<b>2 ピュアノーブル</b> 68%
  &nbsp;○<span>6 ブルーグラビティ</span> 39%</div>
 <div><span class="pill 狙い目">🎯狙い目</span> </div></div>
-</div></a><a href="race_202604040302.html" style="color:inherit"><div class="racecard  ">
+</div></a><a href="race_202604040302.html" style="color:inherit"><div class="racecard   ">
 <div class=rno>2</div>
 <div class=main><div class=ttl>2歳未勝利 <span class=mute style="font-weight:400">10:15</span></div>
 <div class=sub>芝1400m ・ 18頭 ・ 良</div>
 <div class=ax>◎<b>8 サノノキセキ</b> 67%
  &nbsp;○<span>18 ドミナートル</span> 20%</div>
 <div></div></div>
-</div></a><a href="race_202604040303.html" style="color:inherit"><div class="racecard  ">
+</div></a><a href="race_202604040303.html" style="color:inherit"><div class="racecard   ">
 <div class=rno>3</div>
 <div class=main><div class=ttl>2歳未勝利 <span class=mute style="font-weight:400">10:45</span></div>
 <div class=sub>ダ1200m ・ 14頭 ・ 稍重</div>
 <div class=ax>◎<b>6 エコロメジャー</b> 94%
  &nbsp;○<span>13 ビーテリオス</span> 33%</div>
 <div></div></div>
-</div></a><a href="race_202604040304.html" style="color:inherit"><div class="racecard flag ">
+</div></a><a href="race_202604040304.html" style="color:inherit"><div class="racecard flag  ">
 <div class=rno>4</div>
 <div class=main><div class=ttl>3歳以上1勝クラス <span class=mute style="font-weight:400">11:15</span></div>
 <div class=sub>芝2000m ・ 13頭 ・ 良</div>
 <div class=ax>◎<b>6 ビクスバイト</b> 52%
  &nbsp;○<span>2 フレキシブル</span> 23%</div>
 <div><span class="pill 大穴">💣大穴</span> </div></div>
-</div></a><a href="race_202604040305.html" style="color:inherit"><div class="racecard  ">
+</div></a><a href="race_202604040305.html" style="color:inherit"><div class="racecard   ">
 <div class=rno>5</div>
 <div class=main><div class=ttl>2歳新馬 <span class=mute style="font-weight:400">12:05</span></div>
 <div class=sub>芝2000m ・ 14頭 ・ 良</div>
 <div class=ax>◎<b>6 ゾンネシュトラール</b> 87%
  &nbsp;○<span>9 ガンサルート</span> 23%</div>
 <div></div></div>
-</div></a><a href="race_202604040306.html" style="color:inherit"><div class="racecard  ">
+</div></a><a href="race_202604040306.html" style="color:inherit"><div class="racecard   ">
 <div class=rno>6</div>
 <div class=main><div class=ttl>3歳以上1勝クラス <span class=mute style="font-weight:400">12:35</span></div>
 <div class=sub>ダ1200m ・ 12頭 ・ 稍重</div>
 <div class=ax>◎<b>9 マダックス</b> 77%
  &nbsp;○<span>8 シスター</span> 27%</div>
 <div></div></div>
-</div></a><a href="race_202604040307.html" style="color:inherit"><div class="racecard  ">
+</div></a><a href="race_202604040307.html" style="color:inherit"><div class="racecard   ">
 <div class=rno>7</div>
 <div class=main><div class=ttl>3歳以上1勝クラス <span class=mute style="font-weight:400">13:05</span></div>
 <div class=sub>芝1800m ・ 12頭 ・ 良</div>
 <div class=ax>◎<b>6 マイリトルヒーロー</b> 95%
  &nbsp;○<span>7 ラヴエナストロ</span> 35%</div>
 <div></div></div>
-</div></a><a href="race_202604040308.html" style="color:inherit"><div class="racecard flag ">
+</div></a><a href="race_202604040308.html" style="color:inherit"><div class="racecard flag  ">
 <div class=rno>8</div>
 <div class=main><div class=ttl>3歳以上1勝クラス <span class=mute style="font-weight:400">13:35</span></div>
 <div class=sub>ダ1800m ・ 10頭 ・ 稍重</div>
 <div class=ax>◎<b>3 ビービーバザーク</b> 91%
  &nbsp;○<span>10 リアライズオーラム</span> 50%</div>
 <div><span class="pill 狙い目">🎯狙い目</span> </div></div>
-</div></a><a href="race_202604040309.html" style="color:inherit"><div class="racecard  ">
+</div></a><a href="race_202604040309.html" style="color:inherit"><div class="racecard   ">
 <div class=rno>9</div>
 <div class=main><div class=ttl>稲光特別 <span class=mute style="font-weight:400">14:05</span></div>
 <div class=sub>芝1000m ・ 16頭 ・ 良</div>
 <div class=ax>◎<b>13 アカウフリューゲル</b> 95%
  &nbsp;○<span>16 ブライティアブーケ</span> 20%</div>
 <div></div></div>
-</div></a><a href="race_202604040310.html" style="color:inherit"><div class="racecard  ">
+</div></a><a href="race_202604040310.html" style="color:inherit"><div class="racecard   ">
 <div class=rno>10</div>
 <div class=main><div class=ttl>菅名岳特別 <span class=mute style="font-weight:400">14:40</span></div>
 <div class=sub>ダ1800m ・ 15頭 ・ 稍重</div>
 <div class=ax>◎<b>15 ルーナディサングエ</b> 95%
  &nbsp;○<span>2 ベルイストワール</span> 27%</div>
 <div></div></div>
-</div></a><a href="race_202604040311.html" style="color:inherit"><div class="racecard  ">
+</div></a><a href="race_202604040311.html" style="color:inherit"><div class="racecard   ">
 <div class=rno>11</div>
 <div class=main><div class=ttl>魚沼S <span class=mute style="font-weight:400">15:15</span></div>
 <div class=sub>芝2000m ・ 12頭 ・ 良</div>
 <div class=ax>◎<b>10 ミュージシャン</b> 69%
  &nbsp;○<span>3 ユキワリザクラ</span> 48%</div>
 <div></div></div>
-</div></a><a href="race_202604040312.html" style="color:inherit"><div class="racecard flag ">
+</div></a><a href="race_202604040312.html" style="color:inherit"><div class="racecard flag  ">
 <div class=rno>12</div>
 <div class=main><div class=ttl>3歳以上1勝クラス <span class=mute style="font-weight:400">16:00</span></div>
 <div class=sub>芝1400m ・ 18頭 ・ 良</div>
@@ -141,84 +157,84 @@ details summary{cursor:pointer;color:var(--sky);font-weight:700}
 </div></a>
 </div>
 <div class=card><h2>東京 <span class=mute style="font-weight:400">12R</span></h2>
-<a href="race_202605040801.html" style="color:inherit"><div class="racecard flag ">
+<a href="race_202605040801.html" style="color:inherit"><div class="racecard flag  ">
 <div class=rno>1</div>
 <div class=main><div class=ttl>2歳未勝利 <span class=mute style="font-weight:400">10:05</span></div>
 <div class=sub>ダ1400m ・ 14頭 ・ 良</div>
 <div class=ax>◎<b>12 スターフラッシュ</b> 95%
  &nbsp;○<span>7 マーゴットパラディ</span> 32%</div>
 <div><span class="pill 鉄板">🔒鉄板</span> </div></div>
-</div></a><a href="race_202605040802.html" style="color:inherit"><div class="racecard flag ">
+</div></a><a href="race_202605040802.html" style="color:inherit"><div class="racecard flag  ">
 <div class=rno>2</div>
 <div class=main><div class=ttl>2歳未勝利 <span class=mute style="font-weight:400">10:35</span></div>
 <div class=sub>芝1800m ・ 7頭 ・ 良</div>
 <div class=ax>◎<b>7 ファーストアライヴ</b> 95%
  &nbsp;○<span>5 ホウオウビースト</span> 30%</div>
 <div><span class="pill 狙い目">🎯狙い目</span> </div></div>
-</div></a><a href="race_202605040803.html" style="color:inherit"><div class="racecard  ">
+</div></a><a href="race_202605040803.html" style="color:inherit"><div class="racecard   ">
 <div class=rno>3</div>
 <div class=main><div class=ttl>2歳未勝利 <span class=mute style="font-weight:400">11:05</span></div>
 <div class=sub>芝1600m ・ 10頭 ・ 良</div>
 <div class=ax>◎<b>8 タンタフェリチア</b> 95%
  &nbsp;○<span>10 リーベラーリア</span> 62%</div>
 <div></div></div>
-</div></a><a href="race_202605040804.html" style="color:inherit"><div class="racecard  ">
+</div></a><a href="race_202605040804.html" style="color:inherit"><div class="racecard   ">
 <div class=rno>4</div>
 <div class=main><div class=ttl>2歳新馬 <span class=mute style="font-weight:400">11:35</span></div>
 <div class=sub>ダ1600m ・ 16頭 ・ 良</div>
 <div class=ax>◎<b>10 スペシャルブレンド</b> 75%
  &nbsp;○<span>7 バーンズナイト</span> 26%</div>
 <div></div></div>
-</div></a><a href="race_202605040805.html" style="color:inherit"><div class="racecard  ">
+</div></a><a href="race_202605040805.html" style="color:inherit"><div class="racecard   ">
 <div class=rno>5</div>
 <div class=main><div class=ttl>2歳新馬 <span class=mute style="font-weight:400">12:25</span></div>
 <div class=sub>芝1600m ・ 18頭 ・ 良</div>
 <div class=ax>◎<b>14 リラノヴァ</b> 55%
  &nbsp;○<span>12 フェニックスロール</span> 27%</div>
 <div></div></div>
-</div></a><a href="race_202605040806.html" style="color:inherit"><div class="racecard  ">
+</div></a><a href="race_202605040806.html" style="color:inherit"><div class="racecard   ">
 <div class=rno>6</div>
 <div class=main><div class=ttl>2歳新馬 <span class=mute style="font-weight:400">12:55</span></div>
 <div class=sub>ダ1400m ・ 16頭 ・ 良</div>
 <div class=ax>◎<b>7 リーズメイリー</b> 78%
  &nbsp;○<span>11 アメリカンフレンズ</span> 23%</div>
 <div></div></div>
-</div></a><a href="race_202605040807.html" style="color:inherit"><div class="racecard flag ">
+</div></a><a href="race_202605040807.html" style="color:inherit"><div class="racecard flag  ">
 <div class=rno>7</div>
 <div class=main><div class=ttl>3歳以上1勝クラス <span class=mute style="font-weight:400">13:25</span></div>
 <div class=sub>ダ1600m ・ 12頭 ・ 良</div>
 <div class=ax>◎<b>4 ラヴアンドライク</b> 80%
  &nbsp;○<span>9 ディペンダブル</span> 41%</div>
 <div><span class="pill 狙い目">🎯狙い目</span> </div></div>
-</div></a><a href="race_202605040808.html" style="color:inherit"><div class="racecard  ">
+</div></a><a href="race_202605040808.html" style="color:inherit"><div class="racecard   ">
 <div class=rno>8</div>
 <div class=main><div class=ttl>3歳以上1勝クラス <span class=mute style="font-weight:400">13:55</span></div>
 <div class=sub>芝2000m ・ 13頭 ・ 良</div>
 <div class=ax>◎<b>10 ノンブルドール</b> 71%
  &nbsp;○<span>11 マテンロウオリジン</span> 46%</div>
 <div></div></div>
-</div></a><a href="race_202605040809.html" style="color:inherit"><div class="racecard flag ">
+</div></a><a href="race_202605040809.html" style="color:inherit"><div class="racecard flag  ">
 <div class=rno>9</div>
 <div class=main><div class=ttl>精進湖特別 <span class=mute style="font-weight:400">14:25</span></div>
 <div class=sub>芝1400m ・ 13頭 ・ 良</div>
 <div class=ax>◎<b>1 レイユール</b> 43%
  &nbsp;○<span>2 ハクサンイーグル</span> 26%</div>
 <div><span class="pill 狙い目">🎯狙い目</span> </div></div>
-</div></a><a href="race_202605040810.html" style="color:inherit"><div class="racecard  ">
+</div></a><a href="race_202605040810.html" style="color:inherit"><div class="racecard   ">
 <div class=rno>10</div>
 <div class=main><div class=ttl>日本農業新聞杯 <span class=mute style="font-weight:400">15:00</span></div>
 <div class=sub>ダ1600m ・ 16頭 ・ 良</div>
 <div class=ax>◎<b>10 リフレックス</b> 93%
  &nbsp;○<span>12 サムシャイン</span> 36%</div>
 <div></div></div>
-</div></a><a href="race_202605040811.html" style="color:inherit"><div class="racecard  ">
+</div></a><a href="race_202605040811.html" style="color:inherit"><div class="racecard   ">
 <div class=rno>11</div>
-<div class=main><div class=ttl>アルテミスS <span class=mute style="font-weight:400">15:45</span> <span class="pill 鉄板" style="font-size:11px">🏆G3</span></div>
+<div class=main><div class=ttl>アルテミスS <span class=mute style="font-weight:400">15:45</span> <span class="pill G3" style="font-size:11px">🏆G3</span></div>
 <div class=sub>芝1600m ・ 13頭 ・ 良</div>
 <div class=ax>◎<b>6 リスグロワール</b> 77%
  &nbsp;○<span>9 プルヴィナル</span> 39%</div>
 <div></div></div>
-</div></a><a href="race_202605040812.html" style="color:inherit"><div class="racecard flag ">
+</div></a><a href="race_202605040812.html" style="color:inherit"><div class="racecard flag  ">
 <div class=rno>12</div>
 <div class=main><div class=ttl>3歳以上2勝クラス <span class=mute style="font-weight:400">16:30</span></div>
 <div class=sub>ダ1400m ・ 11頭 ・ 良</div>
@@ -228,84 +244,84 @@ details summary{cursor:pointer;color:var(--sky);font-weight:700}
 </div></a>
 </div>
 <div class=card><h2>京都 <span class=mute style="font-weight:400">12R</span></h2>
-<a href="race_202608040801.html" style="color:inherit"><div class="racecard  ">
+<a href="race_202608040801.html" style="color:inherit"><div class="racecard   ">
 <div class=rno>1</div>
 <div class=main><div class=ttl>2歳未勝利 <span class=mute style="font-weight:400">09:55</span></div>
 <div class=sub>ダ1800m ・ 11頭 ・ 良</div>
 <div class=ax>◎<b>9 アメリカンステラ</b> 90%
  &nbsp;○<span>11 マーノマエストロ</span> 40%</div>
 <div></div></div>
-</div></a><a href="race_202608040802.html" style="color:inherit"><div class="racecard  ">
+</div></a><a href="race_202608040802.html" style="color:inherit"><div class="racecard   ">
 <div class=rno>2</div>
 <div class=main><div class=ttl>2歳未勝利 <span class=mute style="font-weight:400">10:25</span></div>
 <div class=sub>芝2000m ・ 10頭 ・ 良</div>
 <div class=ax>◎<b>4 アーケントレイル</b> 82%
  &nbsp;○<span>8 ドナズエクリプス</span> 44%</div>
 <div></div></div>
-</div></a><a href="race_202608040803.html" style="color:inherit"><div class="racecard  ">
+</div></a><a href="race_202608040803.html" style="color:inherit"><div class="racecard   ">
 <div class=rno>3</div>
 <div class=main><div class=ttl>2歳新馬 <span class=mute style="font-weight:400">10:55</span></div>
 <div class=sub>ダ1800m ・ 16頭 ・ 良</div>
 <div class=ax>◎<b>10 ノーブルセプター</b> 70%
  &nbsp;○<span>9 ポアサムシュガー</span> 23%</div>
 <div></div></div>
-</div></a><a href="race_202608040804.html" style="color:inherit"><div class="racecard  ">
+</div></a><a href="race_202608040804.html" style="color:inherit"><div class="racecard   ">
 <div class=rno>4</div>
 <div class=main><div class=ttl>3歳以上障害OP <span class=mute style="font-weight:400">11:25</span></div>
 <div class=sub>障3170m ・ 10頭 ・ 良</div>
 <div class=ax>◎<b>4 バニーラビット</b> 83%
  &nbsp;○<span>2 トゥラッタッタ</span> 30%</div>
 <div></div></div>
-</div></a><a href="race_202608040805.html" style="color:inherit"><div class="racecard  ">
+</div></a><a href="race_202608040805.html" style="color:inherit"><div class="racecard   ">
 <div class=rno>5</div>
 <div class=main><div class=ttl>2歳新馬 <span class=mute style="font-weight:400">12:15</span></div>
 <div class=sub>芝1600m ・ 13頭 ・ 良</div>
 <div class=ax>◎<b>2 マイヴェール</b> 46%
  &nbsp;○<span>7 スマートピナクル</span> 29%</div>
 <div></div></div>
-</div></a><a href="race_202608040806.html" style="color:inherit"><div class="racecard  ">
+</div></a><a href="race_202608040806.html" style="color:inherit"><div class="racecard   ">
 <div class=rno>6</div>
 <div class=main><div class=ttl>3歳以上1勝クラス <span class=mute style="font-weight:400">12:45</span></div>
 <div class=sub>ダ1200m ・ 12頭 ・ 良</div>
 <div class=ax>◎<b>1 ダイヤモンド</b> 69%
  &nbsp;○<span>12 カネコメファミリー</span> 25%</div>
 <div></div></div>
-</div></a><a href="race_202608040807.html" style="color:inherit"><div class="racecard flag ">
+</div></a><a href="race_202608040807.html" style="color:inherit"><div class="racecard flag  ">
 <div class=rno>7</div>
 <div class=main><div class=ttl>3歳以上1勝クラス <span class=mute style="font-weight:400">13:15</span></div>
 <div class=sub>ダ1800m ・ 11頭 ・ 良</div>
 <div class=ax>◎<b>7 リーチグローリー</b> 62%
  &nbsp;○<span>5 オブシディアーナ</span> 38%</div>
 <div><span class="pill 大穴">💣大穴</span> </div></div>
-</div></a><a href="race_202608040808.html" style="color:inherit"><div class="racecard  ">
+</div></a><a href="race_202608040808.html" style="color:inherit"><div class="racecard   ">
 <div class=rno>8</div>
 <div class=main><div class=ttl>3歳以上2勝クラス <span class=mute style="font-weight:400">13:45</span></div>
 <div class=sub>芝1800m ・ 8頭 ・ 良</div>
 <div class=ax>◎<b>4 アーリーハーベスト</b> 91%
  &nbsp;○<span>8 オリバナム</span> 33%</div>
 <div></div></div>
-</div></a><a href="race_202608040809.html" style="color:inherit"><div class="racecard flag ">
+</div></a><a href="race_202608040809.html" style="color:inherit"><div class="racecard flag  ">
 <div class=rno>9</div>
 <div class=main><div class=ttl>なでしこ賞 <span class=mute style="font-weight:400">14:15</span></div>
 <div class=sub>ダ1400m ・ 9頭 ・ 良</div>
 <div class=ax>◎<b>9 ユウライクスター</b> 94%
  &nbsp;○<span>5 ペアスターロード</span> 30%</div>
 <div><span class="pill 狙い目">🎯狙い目</span> </div></div>
-</div></a><a href="race_202608040810.html" style="color:inherit"><div class="racecard  ">
+</div></a><a href="race_202608040810.html" style="color:inherit"><div class="racecard   ">
 <div class=rno>10</div>
 <div class=main><div class=ttl>長岡京S <span class=mute style="font-weight:400">14:50</span></div>
 <div class=sub>芝1400m ・ 15頭 ・ 良</div>
 <div class=ax>◎<b>10 スカイハイ</b> 42%
  &nbsp;○<span>8 アンダースコア</span> 27%</div>
 <div></div></div>
-</div></a><a href="race_202608040811.html" style="color:inherit"><div class="racecard  ">
+</div></a><a href="race_202608040811.html" style="color:inherit"><div class="racecard   ">
 <div class=rno>11</div>
 <div class=main><div class=ttl>カシオペアS <span class=mute style="font-weight:400">15:30</span></div>
 <div class=sub>芝1800m ・ 16頭 ・ 良</div>
 <div class=ax>◎<b>11 ジーティーアダマン</b> 42%
  &nbsp;○<span>12 ディールメーカー</span> 23%</div>
 <div></div></div>
-</div></a><a href="race_202608040812.html" style="color:inherit"><div class="racecard flag ">
+</div></a><a href="race_202608040812.html" style="color:inherit"><div class="racecard flag  ">
 <div class=rno>12</div>
 <div class=main><div class=ttl>3歳以上2勝クラス <span class=mute style="font-weight:400">16:15</span></div>
 <div class=sub>ダ1900m ・ 12頭 ・ 良</div>
@@ -315,6 +331,6 @@ details summary{cursor:pointer;color:var(--sky);font-weight:700}
 </div></a>
 </div>
 <div class=mute style="font-size:12px;padding:0 4px">◎=軸馬(3着内率が最も高い馬) ○=連対候補(軸以外で連対率1位)。%はAI確率(実力モデル×市場)。</div>
-<div class=card style="font-size:11px;color:var(--mute)">本サイトの予想はAI(機械学習)の計算結果で、的中を保証するものではありません。馬券の購入はご自身の判断と責任でお願いします。20歳未満の方は馬券を購入できません。成績は紙上検証(実際には購入していない記録)を含みます。<br>更新 2026-10-24 07:49</div></main>
+<div class=card style="font-size:11px;color:var(--mute)">本サイトの予想はAI(機械学習)の計算結果で、的中を保証するものではありません。馬券の購入はご自身の判断と責任でお願いします。20歳未満の方は馬券を購入できません。成績は紙上検証(実際には購入していない記録)を含みます。<br>更新 2026-10-24 08:15</div></main>
 <nav class=tabs><a href="index.html" class="on">🏇 予想</a><a href="results.html" class="">📊 成績</a><a href="about.html" class="">ℹ️ この予想について</a></nav>
 </body></html>

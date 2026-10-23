@@ -46,10 +46,25 @@ details summary{cursor:pointer;color:var(--sky);font-weight:700}
 .an .good{color:var(--mint);font-weight:900}.an .bad{color:#ff8c8c;font-weight:900}.card{overflow:hidden;max-width:100%}.an .tw{overflow-x:auto;max-width:100%;margin:6px 0}.an table.an{font-size:12px;margin:0;width:100%;table-layout:fixed}.an table.an th,.an table.an td{text-align:left;padding:4px 5px;white-space:normal;overflow-wrap:anywhere}.an li,.an p{white-space:normal;overflow-wrap:anywhere}
 .ev{border-radius:14px;padding:10px 12px;margin:6px 0;font-size:14px;line-height:1.5;border-left:5px solid var(--sky);background:rgba(91,184,255,.12)}
 .ev.warn{border-left-color:var(--orange);background:rgba(255,159,67,.16)}.ev.ok{border-left-color:var(--mint);background:rgba(93,242,195,.12)}.ev b{color:var(--yellow)}.ev .k{font-size:11px;font-weight:900;letter-spacing:.06em;color:var(--mute);display:block}
+
+/* G1強調(公開版) */
+.pill.G1{background:linear-gradient(135deg,#fff3a0,#ffd93d 45%,#ff9f43);color:#3a1a00;font-size:13px;padding:3px 12px;box-shadow:0 0 0 2px rgba(255,217,61,.35),0 4px 14px rgba(255,159,67,.45);letter-spacing:.04em}
+.pill.G2{background:linear-gradient(135deg,#e8e8f0,#b9c2d6);color:#14052e}.pill.G3{background:linear-gradient(135deg,#f0c9a0,#c98b5a);color:#14052e}
+.g1banner{display:block;color:inherit;position:relative;overflow:hidden;border-radius:22px;padding:16px 16px 14px;margin-bottom:12px;border:2px solid rgba(255,217,61,.75);
+background:linear-gradient(135deg,rgba(255,217,61,.32),rgba(255,95,162,.22) 55%,rgba(123,47,247,.25));box-shadow:0 0 0 4px rgba(255,217,61,.12),0 14px 40px rgba(255,159,67,.35);backdrop-filter:blur(14px)}
+.g1banner:before{content:"";position:absolute;inset:-40% -20%;background:conic-gradient(from 90deg,transparent 0 70%,rgba(255,255,255,.22) 80%,transparent 90%);animation:g1spin 6s linear infinite;pointer-events:none}
+@keyframes g1spin{to{transform:rotate(360deg)}}
+.g1banner .k{position:relative;font-size:12px;font-weight:900;letter-spacing:.14em;color:#ffe066}.g1banner .t{position:relative;font-size:24px;font-weight:900;line-height:1.2;margin:2px 0 4px;background:linear-gradient(90deg,#fff,#ffd93d);-webkit-background-clip:text;background-clip:text;color:transparent}
+.g1banner .m{position:relative;font-size:13px;color:var(--fg)}.g1banner .ax{position:relative;margin-top:8px;font-size:15px;font-weight:800}.g1banner .ax b{color:var(--yellow)}.g1banner .ax span{color:var(--mint)}
+.g1banner .go{position:relative;display:inline-block;margin-top:10px;font-size:12px;font-weight:900;padding:6px 12px;border-radius:999px;background:linear-gradient(135deg,var(--yellow),var(--orange));color:#14052e}
+.racecard.g1{margin:6px -8px;padding:12px 8px;border-radius:16px;border:1px solid rgba(255,217,61,.55);background:linear-gradient(135deg,rgba(255,217,61,.18),rgba(255,95,162,.10));box-shadow:inset 0 0 0 1px rgba(255,255,255,.06)}
+.racecard.g1 .rno{background:linear-gradient(135deg,#fff3a0,#ffd93d,#ff9f43);color:#3a1a00;box-shadow:0 4px 12px rgba(255,159,67,.45)}.racecard.g1 .ttl{font-size:17px;color:#ffe066}
+.card.g1card{border:2px solid rgba(255,217,61,.7);background:linear-gradient(135deg,rgba(255,217,61,.22),rgba(255,95,162,.14) 60%,rgba(123,47,247,.18));box-shadow:0 0 0 4px rgba(255,217,61,.12),0 14px 40px rgba(255,159,67,.3)}
+.card.g1card .g1k{font-size:12px;font-weight:900;letter-spacing:.14em;color:#ffe066;margin-bottom:2px}
 </style></head><body>
 <header><h1>新潟11R 魚沼S</h1><a href="day_2026-10-24.html" class=badge>← 10-24</a></header>
 <main>
-<div class=card><div style="font-size:19px;font-weight:900">新潟11R 魚沼S </div>
+<div class="card "><div style="font-size:19px;font-weight:900">新潟11R 魚沼S </div>
 <div class=mute>2026-10-24 15:15発走 ・ 芝左2000m ・ 馬場 <b style="color:var(--fg)">良</b> 晴 ・ 12頭</div>
 
 
@@ -174,6 +189,6 @@ details summary{cursor:pointer;color:var(--sky);font-weight:700}
 </tr>
 </table></div></div>
 
-<div class=card style="font-size:11px;color:var(--mute)">本サイトの予想はAI(機械学習)の計算結果で、的中を保証するものではありません。馬券の購入はご自身の判断と責任でお願いします。20歳未満の方は馬券を購入できません。成績は紙上検証(実際には購入していない記録)を含みます。<br>更新 2026-10-24 07:49</div></main>
+<div class=card style="font-size:11px;color:var(--mute)">本サイトの予想はAI(機械学習)の計算結果で、的中を保証するものではありません。馬券の購入はご自身の判断と責任でお願いします。20歳未満の方は馬券を購入できません。成績は紙上検証(実際には購入していない記録)を含みます。<br>更新 2026-10-24 08:15</div></main>
 <nav class=tabs><a href="index.html" class="on">🏇 予想</a><a href="results.html" class="">📊 成績</a><a href="about.html" class="">ℹ️ この予想について</a></nav>
 </body></html>
