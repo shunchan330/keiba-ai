@@ -39,6 +39,12 @@ details summary{cursor:pointer;color:var(--sky);font-weight:700}
 .racecard .main{flex:1;min-width:0}.racecard .ttl{font-weight:800;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.racecard .sub{font-size:12px;color:var(--mute)}.racecard .ax{font-size:13px}
 .racecard .ax b{color:var(--yellow)}.racecard .ax span{color:var(--mint)}
 .badge{font-size:11px;font-weight:800;padding:2px 8px;border-radius:999px;background:var(--glass2)}
+.sb{flex-shrink:0;padding-left:4px}.stamp.miss{opacity:.55}
+.stamp{display:inline-block;transform:rotate(-12deg);border:3px double #ff4d4d;color:#ff4d4d;border-radius:10px;padding:1px 8px;font-weight:900;font-size:13px;letter-spacing:.12em;line-height:1.35;background:rgba(255,77,77,.10);white-space:nowrap;vertical-align:middle;animation:stampin .45s cubic-bezier(.2,1.4,.4,1) both;text-shadow:0 0 6px rgba(255,77,77,.35)}
+.stamp.win{border-color:#ffd93d;color:#ffd93d;background:rgba(255,217,61,.12);text-shadow:0 0 8px rgba(255,217,61,.45)}.stamp.miss{border-style:solid;border-width:2px;border-color:rgba(255,255,255,.28);color:rgba(255,255,255,.45);background:transparent;text-shadow:none;font-size:11px;letter-spacing:.06em}
+.stamp.big{font-size:21px;padding:3px 14px;border-width:4px;transform:rotate(-8deg);border-radius:14px;margin:6px 0 0 12px}.stamp small{display:block;font-size:.68em;letter-spacing:0;line-height:1.1;text-align:center}.stamp.big small{display:inline;margin-left:6px;font-size:.6em}.stamp.miss{font-size:10px;padding:0 5px}
+@keyframes stampin{0%{transform:rotate(-12deg) scale(1.8);opacity:0}100%{transform:rotate(-12deg) scale(1);opacity:1}}
+.racecard.hit{background:linear-gradient(90deg,rgba(255,77,77,.10),transparent 70%);margin:0 -8px;padding-left:8px;padding-right:8px;border-radius:12px}.racecard.hit.win{background:linear-gradient(90deg,rgba(255,217,61,.14),transparent 70%)}
 .sugg.bought{background:linear-gradient(90deg,rgba(93,242,195,.16),transparent);border-radius:12px;padding-left:8px!important;margin:0 -8px 0 -8px}tr.realbet td{background:rgba(93,242,195,.10)}
 .an h3{font-size:16px;font-weight:900;margin:14px 0 6px;padding-left:10px;border-left:4px solid var(--yellow);background:linear-gradient(90deg,rgba(255,217,61,.14),transparent);border-radius:4px}
 .an h4{font-size:14px;margin:10px 0 4px;color:var(--mint)}.an ul{margin:4px 0 8px;padding-left:18px}.an li{margin:4px 0;font-size:14.5px;line-height:1.55}.an p{margin:6px 0;font-size:14.5px}
@@ -67,271 +73,307 @@ background:linear-gradient(135deg,rgba(255,217,61,.32),rgba(255,95,162,.22) 55%,
 <main>
 <div class="daynav"><a href="day_2026-10-24.html" class="on">10/24(土)</a><a href="day_2026-10-25.html" class="">10/25(日) 👑G1</a></div>
 
-<div class=card><div class=row style="margin-bottom:6px"><span class="pill 狙い目">🎯狙い目 5</span> <span class="pill 鉄板">🔒鉄板 2</span></div>
+<div class=card><div style="margin-bottom:6px;font-weight:800">🏁 確定 36R ・ <span class="stamp" style="animation:none">的中 24R</span> <span class=mute>紙上 13,200円 → <b style="color:#ffb3b3">8,180円</b>(62%)</span></div><div class=row style="margin-bottom:6px"><span class="pill 狙い目">🎯狙い目 5</span> <span class="pill 鉄板">🔒鉄板 2</span></div>
 </div>
 
 <div class=card><h2>新潟 <span class=mute style="font-weight:400">12R</span></h2>
-<a href="race_202604040301.html" style="color:inherit"><div class="racecard  done ">
+<a href="race_202604040301.html" style="color:inherit"><div class="racecard  done  hit win">
 <div class=rno>1</div>
 <div class=main><div class=ttl>2歳未勝利 <span class=mute style="font-weight:400">09:45</span></div>
 <div class=sub>ダ1800m ・ 12頭 ・ 稍重 ・ 確定</div>
 <div class=ax>◎<b>2 ピュアノーブル</b> 60% <span class="pos">→1着</span>
  &nbsp;○<span>8 ピュアティアラ</span> 39% <span class="pos">→2着</span></div>
 <div></div></div>
-</div></a><a href="race_202604040302.html" style="color:inherit"><div class="racecard  done ">
+<div class=sb><span class="stamp win">的中<small>+1,030円</small></span></div>
+</div></a><a href="race_202604040302.html" style="color:inherit"><div class="racecard  done   ">
 <div class=rno>2</div>
 <div class=main><div class=ttl>2歳未勝利 <span class=mute style="font-weight:400">10:15</span></div>
 <div class=sub>芝1400m ・ 18頭 ・ 良 ・ 確定</div>
 <div class=ax>◎<b>18 ドミナートル</b> 57% <span class="neg">→4着</span>
  &nbsp;○<span>8 サノノキセキ</span> 38% <span class="pos">→1着</span></div>
 <div></div></div>
-</div></a><a href="race_202604040303.html" style="color:inherit"><div class="racecard  done ">
+<div class=sb><span class="stamp miss">ハズレ</span></div>
+</div></a><a href="race_202604040303.html" style="color:inherit"><div class="racecard  done   ">
 <div class=rno>3</div>
 <div class=main><div class=ttl>2歳未勝利 <span class=mute style="font-weight:400">10:45</span></div>
 <div class=sub>ダ1200m ・ 14頭 ・ 稍重 ・ 確定</div>
 <div class=ax>◎<b>5 ユイノジカンカセギ</b> 56% <span class="neg">→9着</span>
  &nbsp;○<span>6 エコロメジャー</span> 29% <span class="pos">→2着</span></div>
 <div></div></div>
-</div></a><a href="race_202604040304.html" style="color:inherit"><div class="racecard  done ">
+<div class=sb><span class="stamp miss">ハズレ</span></div>
+</div></a><a href="race_202604040304.html" style="color:inherit"><div class="racecard  done   ">
 <div class=rno>4</div>
 <div class=main><div class=ttl>3歳以上1勝クラス <span class=mute style="font-weight:400">11:15</span></div>
 <div class=sub>芝2000m ・ 13頭 ・ 良 ・ 確定</div>
 <div class=ax>◎<b>11 アグレイビューティ</b> 52% <span class="neg">→6着</span>
  &nbsp;○<span>1 ミッキーテネシー</span> 33% <span class="neg">→7着</span></div>
 <div></div></div>
-</div></a><a href="race_202604040305.html" style="color:inherit"><div class="racecard  done ">
+<div class=sb><span class="stamp miss">ハズレ</span></div>
+</div></a><a href="race_202604040305.html" style="color:inherit"><div class="racecard  done   ">
 <div class=rno>5</div>
 <div class=main><div class=ttl>2歳新馬 <span class=mute style="font-weight:400">12:05</span></div>
 <div class=sub>芝2000m ・ 14頭 ・ 良 ・ 確定</div>
 <div class=ax>◎<b>6 ゾンネシュトラール</b> 88% <span class="neg">→4着</span>
  &nbsp;○<span>3 スイートハーモニー</span> 26% <span class="neg">→12着</span></div>
 <div></div></div>
-</div></a><a href="race_202604040306.html" style="color:inherit"><div class="racecard  done ">
+<div class=sb><span class="stamp miss">ハズレ</span></div>
+</div></a><a href="race_202604040306.html" style="color:inherit"><div class="racecard  done   ">
 <div class=rno>6</div>
 <div class=main><div class=ttl>3歳以上1勝クラス <span class=mute style="font-weight:400">12:35</span></div>
 <div class=sub>ダ1200m ・ 12頭 ・ 稍重 ・ 確定</div>
 <div class=ax>◎<b>7 アパレイユ</b> 68% <span class="neg">→5着</span>
  &nbsp;○<span>12 メリフルアス</span> 38% <span class="neg">→6着</span></div>
 <div></div></div>
-</div></a><a href="race_202604040307.html" style="color:inherit"><div class="racecard  done ">
+<div class=sb><span class="stamp miss">ハズレ</span></div>
+</div></a><a href="race_202604040307.html" style="color:inherit"><div class="racecard  done   ">
 <div class=rno>7</div>
 <div class=main><div class=ttl>3歳以上1勝クラス <span class=mute style="font-weight:400">13:05</span></div>
 <div class=sub>芝1800m ・ 12頭 ・ 良 ・ 確定</div>
 <div class=ax>◎<b>6 マイリトルヒーロー</b> 90% <span class="neg">→5着</span>
  &nbsp;○<span>4 アドマイヤウルトラ</span> 39% <span class="neg">→4着</span></div>
 <div></div></div>
-</div></a><a href="race_202604040308.html" style="color:inherit"><div class="racecard  done ">
+<div class=sb><span class="stamp miss">ハズレ</span></div>
+</div></a><a href="race_202604040308.html" style="color:inherit"><div class="racecard  done  hit ">
 <div class=rno>8</div>
 <div class=main><div class=ttl>3歳以上1勝クラス <span class=mute style="font-weight:400">13:35</span></div>
 <div class=sub>ダ1800m ・ 10頭 ・ 稍重 ・ 確定</div>
 <div class=ax>◎<b>3 ビービーバザーク</b> 75% <span class="pos">→2着</span>
  &nbsp;○<span>9 トルネードアイル</span> 38% <span class="neg">→6着</span></div>
 <div></div></div>
-</div></a><a href="race_202604040309.html" style="color:inherit"><div class="racecard  done ">
+<div class=sb><span class="stamp">的中<small>+150円</small></span></div>
+</div></a><a href="race_202604040309.html" style="color:inherit"><div class="racecard  done  hit win">
 <div class=rno>9</div>
 <div class=main><div class=ttl>稲光特別 <span class=mute style="font-weight:400">14:05</span></div>
 <div class=sub>芝1000m ・ 16頭 ・ 良 ・ 確定</div>
 <div class=ax>◎<b>13 アカウフリューゲル</b> 95% <span class="pos">→1着</span>
  &nbsp;○<span>16 ブライティアブーケ</span> 22% <span class="neg">→4着</span></div>
 <div></div></div>
-</div></a><a href="race_202604040310.html" style="color:inherit"><div class="racecard  done ">
+<div class=sb><span class="stamp win">的中<small>+110円</small></span></div>
+</div></a><a href="race_202604040310.html" style="color:inherit"><div class="racecard  done  hit ">
 <div class=rno>10</div>
 <div class=main><div class=ttl>菅名岳特別 <span class=mute style="font-weight:400">14:40</span></div>
 <div class=sub>ダ1800m ・ 15頭 ・ 稍重 ・ 確定</div>
 <div class=ax>◎<b>15 ルーナディサングエ</b> 95% <span class="pos">→2着</span>
  &nbsp;○<span>13 ディアウス</span> 23% <span class="neg">→3着</span></div>
 <div></div></div>
-</div></a><a href="race_202604040311.html" style="color:inherit"><div class="racecard  done ">
+<div class=sb><span class="stamp">的中<small>+120円</small></span></div>
+</div></a><a href="race_202604040311.html" style="color:inherit"><div class="racecard  done  hit ">
 <div class=rno>11</div>
 <div class=main><div class=ttl>魚沼S <span class=mute style="font-weight:400">15:15</span></div>
 <div class=sub>芝2000m ・ 12頭 ・ 稍重 ・ 確定</div>
 <div class=ax>◎<b>10 ミュージシャン</b> 77% <span class="pos">→2着</span>
  &nbsp;○<span>3 ユキワリザクラ</span> 36% <span class="neg">→9着</span></div>
 <div></div></div>
-</div></a><a href="race_202604040312.html" style="color:inherit"><div class="racecard flag done ">
+<div class=sb><span class="stamp">的中<small>+160円</small></span></div>
+</div></a><a href="race_202604040312.html" style="color:inherit"><div class="racecard flag done  hit ">
 <div class=rno>12</div>
 <div class=main><div class=ttl>3歳以上1勝クラス <span class=mute style="font-weight:400">16:01</span></div>
 <div class=sub>芝1400m ・ 18頭 ・ 稍重 ・ 確定</div>
 <div class=ax>◎<b>1 リアライズリバティ</b> 53% <span class="pos">→3着</span>
  &nbsp;○<span>12 ジョワイユノエル</span> 27% <span class="neg">→17着</span></div>
 <div><span class="pill 狙い目">🎯狙い目</span> </div></div>
+<div class=sb><span class="stamp">的中<small>+160円</small></span></div>
 </div></a>
 </div>
 <div class=card><h2>東京 <span class=mute style="font-weight:400">12R</span></h2>
-<a href="race_202605040801.html" style="color:inherit"><div class="racecard flag done ">
+<a href="race_202605040801.html" style="color:inherit"><div class="racecard flag done  hit win">
 <div class=rno>1</div>
 <div class=main><div class=ttl>2歳未勝利 <span class=mute style="font-weight:400">10:05</span></div>
 <div class=sub>ダ1400m ・ 14頭 ・ 良 ・ 確定</div>
 <div class=ax>◎<b>12 スターフラッシュ</b> 95% <span class="pos">→1着</span>
  &nbsp;○<span>7 マーゴットパラディ</span> 40% <span class="neg">→3着</span></div>
 <div><span class="pill 鉄板">🔒鉄板</span> </div></div>
-</div></a><a href="race_202605040802.html" style="color:inherit"><div class="racecard  done ">
+<div class=sb><span class="stamp win">的中<small>+1,020円</small></span></div>
+</div></a><a href="race_202605040802.html" style="color:inherit"><div class="racecard  done   ">
 <div class=rno>2</div>
 <div class=main><div class=ttl>2歳未勝利 <span class=mute style="font-weight:400">10:35</span></div>
 <div class=sub>芝1800m ・ 7頭 ・ 良 ・ 確定</div>
 <div class=ax>◎<b>7 ファーストアライヴ</b> 85% <span class="pos">→3着</span>
  &nbsp;○<span>1 サントシャペル</span> 52% <span class="pos">→2着</span></div>
 <div></div></div>
-</div></a><a href="race_202605040803.html" style="color:inherit"><div class="racecard flag done ">
+<div class=sb><span class="stamp miss">◎3着内・買い目ハズレ</span></div>
+</div></a><a href="race_202605040803.html" style="color:inherit"><div class="racecard flag done  hit win">
 <div class=rno>3</div>
 <div class=main><div class=ttl>2歳未勝利 <span class=mute style="font-weight:400">11:05</span></div>
 <div class=sub>芝1600m ・ 10頭 ・ 良 ・ 確定</div>
 <div class=ax>◎<b>8 タンタフェリチア</b> 95% <span class="pos">→1着</span>
  &nbsp;○<span>10 リーベラーリア</span> 42% <span class="pos">→2着</span></div>
 <div><span class="pill 狙い目">🎯狙い目</span> </div></div>
-</div></a><a href="race_202605040804.html" style="color:inherit"><div class="racecard  done ">
+<div class=sb><span class="stamp win">的中<small>+1,840円</small></span></div>
+</div></a><a href="race_202605040804.html" style="color:inherit"><div class="racecard  done  hit ">
 <div class=rno>4</div>
 <div class=main><div class=ttl>2歳新馬 <span class=mute style="font-weight:400">11:35</span></div>
 <div class=sub>ダ1600m ・ 16頭 ・ 良 ・ 確定</div>
 <div class=ax>◎<b>10 スペシャルブレンド</b> 95% <span class="pos">→2着</span>
  &nbsp;○<span>12 ヘイヴァイタヒチ</span> 39% <span class="pos">→1着</span></div>
 <div></div></div>
-</div></a><a href="race_202605040805.html" style="color:inherit"><div class="racecard  done ">
+<div class=sb><span class="stamp">的中<small>+400円</small></span></div>
+</div></a><a href="race_202605040805.html" style="color:inherit"><div class="racecard  done   ">
 <div class=rno>5</div>
 <div class=main><div class=ttl>2歳新馬 <span class=mute style="font-weight:400">12:25</span></div>
 <div class=sub>芝1600m ・ 18頭 ・ 良 ・ 確定</div>
 <div class=ax>◎<b>12 フェニックスロール</b> 90% <span class="neg">→4着</span>
  &nbsp;○<span>2 ムーンキャスト</span> 27% <span class="neg">→3着</span></div>
 <div></div></div>
-</div></a><a href="race_202605040806.html" style="color:inherit"><div class="racecard  done ">
+<div class=sb><span class="stamp miss">ハズレ</span></div>
+</div></a><a href="race_202605040806.html" style="color:inherit"><div class="racecard  done  hit ">
 <div class=rno>6</div>
 <div class=main><div class=ttl>2歳新馬 <span class=mute style="font-weight:400">12:55</span></div>
 <div class=sub>ダ1400m ・ 16頭 ・ 稍重 ・ 確定</div>
 <div class=ax>◎<b>7 リーズメイリー</b> 72% <span class="pos">→3着</span>
  &nbsp;○<span>3 ダノンアイコニック</span> 40% <span class="pos">→2着</span></div>
 <div></div></div>
-</div></a><a href="race_202605040807.html" style="color:inherit"><div class="racecard  done ">
+<div class=sb><span class="stamp">的中<small>+120円</small></span></div>
+</div></a><a href="race_202605040807.html" style="color:inherit"><div class="racecard  done  hit win">
 <div class=rno>7</div>
 <div class=main><div class=ttl>3歳以上1勝クラス <span class=mute style="font-weight:400">13:25</span></div>
 <div class=sub>ダ1600m ・ 12頭 ・ 稍重 ・ 確定</div>
 <div class=ax>◎<b>4 ラヴアンドライク</b> 84% <span class="pos">→1着</span>
  &nbsp;○<span>9 ディペンダブル</span> 29% <span class="neg">→3着</span></div>
 <div></div></div>
-</div></a><a href="race_202605040808.html" style="color:inherit"><div class="racecard  done ">
+<div class=sb><span class="stamp win">的中<small>+120円</small></span></div>
+</div></a><a href="race_202605040808.html" style="color:inherit"><div class="racecard  done  hit ">
 <div class=rno>8</div>
 <div class=main><div class=ttl>3歳以上1勝クラス <span class=mute style="font-weight:400">13:55</span></div>
 <div class=sub>芝2000m ・ 13頭 ・ 稍重 ・ 確定</div>
 <div class=ax>◎<b>5 アートバーゼル</b> 95% <span class="pos">→3着</span>
  &nbsp;○<span>10 ノンブルドール</span> 44% <span class="neg">→6着</span></div>
 <div></div></div>
-</div></a><a href="race_202605040809.html" style="color:inherit"><div class="racecard  done ">
+<div class=sb><span class="stamp">的中<small>+140円</small></span></div>
+</div></a><a href="race_202605040809.html" style="color:inherit"><div class="racecard  done  hit ">
 <div class=rno>9</div>
 <div class=main><div class=ttl>精進湖特別 <span class=mute style="font-weight:400">14:25</span></div>
 <div class=sub>芝1400m ・ 13頭 ・ 稍重 ・ 確定</div>
 <div class=ax>◎<b>12 ダガーリング</b> 64% <span class="pos">→2着</span>
  &nbsp;○<span>1 レイユール</span> 24% <span class="neg">→5着</span></div>
 <div></div></div>
-</div></a><a href="race_202605040810.html" style="color:inherit"><div class="racecard  done ">
+<div class=sb><span class="stamp">的中<small>+130円</small></span></div>
+</div></a><a href="race_202605040810.html" style="color:inherit"><div class="racecard  done  hit win">
 <div class=rno>10</div>
 <div class=main><div class=ttl>日本農業新聞杯 <span class=mute style="font-weight:400">15:01</span></div>
 <div class=sub>ダ1600m ・ 16頭 ・ 稍重 ・ 確定</div>
 <div class=ax>◎<b>12 サムシャイン</b> 82% <span class="pos">→1着</span>
  &nbsp;○<span>10 リフレックス</span> 21% <span class="neg">→5着</span></div>
 <div></div></div>
-</div></a><a href="race_202605040811.html" style="color:inherit"><div class="racecard  done ">
+<div class=sb><span class="stamp win">的中<small>+130円</small></span></div>
+</div></a><a href="race_202605040811.html" style="color:inherit"><div class="racecard  done  hit win">
 <div class=rno>11</div>
 <div class=main><div class=ttl>アルテミスS <span class=mute style="font-weight:400">15:45</span> <span class="pill G3" style="font-size:11px">🏆G3</span></div>
 <div class=sub>芝1600m ・ 13頭 ・ 稍重 ・ 確定</div>
 <div class=ax>◎<b>9 プルヴィナル</b> 65% <span class="pos">→1着</span>
  &nbsp;○<span>6 リスグロワール</span> 44% <span class="neg">→8着</span></div>
 <div></div></div>
-</div></a><a href="race_202605040812.html" style="color:inherit"><div class="racecard flag done ">
+<div class=sb><span class="stamp win">的中<small>+130円</small></span></div>
+</div></a><a href="race_202605040812.html" style="color:inherit"><div class="racecard flag done  hit win">
 <div class=rno>12</div>
 <div class=main><div class=ttl>3歳以上2勝クラス <span class=mute style="font-weight:400">16:30</span></div>
 <div class=sub>ダ1400m ・ 11頭 ・ 稍重 ・ 確定</div>
 <div class=ax>◎<b>4 トヨサカエ</b> 65% <span class="pos">→1着</span>
  &nbsp;○<span>5 ショコラキュイ</span> 25% <span class="neg">→7着</span></div>
 <div><span class="pill 狙い目">🎯狙い目</span> </div></div>
+<div class=sb><span class="stamp win">的中<small>+120円</small></span></div>
 </div></a>
 </div>
 <div class=card><h2>京都 <span class=mute style="font-weight:400">12R</span></h2>
-<a href="race_202608040801.html" style="color:inherit"><div class="racecard  done ">
+<a href="race_202608040801.html" style="color:inherit"><div class="racecard  done  hit ">
 <div class=rno>1</div>
 <div class=main><div class=ttl>2歳未勝利 <span class=mute style="font-weight:400">09:55</span></div>
 <div class=sub>ダ1800m ・ 11頭 ・ 重 ・ 確定</div>
 <div class=ax>◎<b>9 アメリカンステラ</b> 95% <span class="pos">→2着</span>
  &nbsp;○<span>7 マーゴットバサラ</span> 49% <span class="neg">→10着</span></div>
 <div></div></div>
-</div></a><a href="race_202608040802.html" style="color:inherit"><div class="racecard  done ">
+<div class=sb><span class="stamp">的中<small>+110円</small></span></div>
+</div></a><a href="race_202608040802.html" style="color:inherit"><div class="racecard  done  hit win">
 <div class=rno>2</div>
 <div class=main><div class=ttl>2歳未勝利 <span class=mute style="font-weight:400">10:25</span></div>
 <div class=sub>芝2000m ・ 10頭 ・ 稍重 ・ 確定</div>
 <div class=ax>◎<b>4 アーケントレイル</b> 90% <span class="pos">→1着</span>
  &nbsp;○<span>8 ドナズエクリプス</span> 48% <span class="neg">→6着</span></div>
 <div></div></div>
-</div></a><a href="race_202608040803.html" style="color:inherit"><div class="racecard  done ">
+<div class=sb><span class="stamp win">的中<small>+120円</small></span></div>
+</div></a><a href="race_202608040803.html" style="color:inherit"><div class="racecard  done   ">
 <div class=rno>3</div>
 <div class=main><div class=ttl>2歳新馬 <span class=mute style="font-weight:400">10:55</span></div>
 <div class=sub>ダ1800m ・ 16頭 ・ 重 ・ 確定</div>
 <div class=ax>◎<b>3 ジューンジャムズ</b> 41% <span class="neg">→5着</span>
  &nbsp;○<span>10 ノーブルセプター</span> 27% <span class="neg">→14着</span></div>
 <div></div></div>
-</div></a><a href="race_202608040804.html" style="color:inherit"><div class="racecard flag done ">
+<div class=sb><span class="stamp miss">ハズレ</span></div>
+</div></a><a href="race_202608040804.html" style="color:inherit"><div class="racecard flag done  hit ">
 <div class=rno>4</div>
 <div class=main><div class=ttl>3歳以上障害OP <span class=mute style="font-weight:400">11:25</span></div>
 <div class=sub>障3170m ・ 10頭 ・ 稍重 ・ 確定</div>
 <div class=ax>◎<b>4 バニーラビット</b> 60% <span class="neg">→5着</span>
  &nbsp;○<span>2 トゥラッタッタ</span> 31% <span class="neg">→3着</span></div>
 <div><span class="pill 狙い目">🎯狙い目</span> </div></div>
-</div></a><a href="race_202608040805.html" style="color:inherit"><div class="racecard  done ">
+<div class=sb><span class="stamp">的中<small>+570円</small></span></div>
+</div></a><a href="race_202608040805.html" style="color:inherit"><div class="racecard  done  hit win">
 <div class=rno>5</div>
 <div class=main><div class=ttl>2歳新馬 <span class=mute style="font-weight:400">12:15</span></div>
 <div class=sub>芝1600m ・ 13頭 ・ 稍重 ・ 確定</div>
 <div class=ax>◎<b>7 スマートピナクル</b> 66% <span class="pos">→1着</span>
  &nbsp;○<span>12 セレナード</span> 29% <span class="neg">→12着</span></div>
 <div></div></div>
-</div></a><a href="race_202608040806.html" style="color:inherit"><div class="racecard  done ">
+<div class=sb><span class="stamp win">的中<small>+140円</small></span></div>
+</div></a><a href="race_202608040806.html" style="color:inherit"><div class="racecard  done   ">
 <div class=rno>6</div>
 <div class=main><div class=ttl>3歳以上1勝クラス <span class=mute style="font-weight:400">12:45</span></div>
 <div class=sub>ダ1200m ・ 12頭 ・ 重 ・ 確定</div>
 <div class=ax>◎<b>1 ダイヤモンド</b> 62% <span class="neg">→6着</span>
  &nbsp;○<span>12 カネコメファミリー</span> 33% <span class="neg">→12着</span></div>
 <div></div></div>
-</div></a><a href="race_202608040807.html" style="color:inherit"><div class="racecard  done ">
+<div class=sb><span class="stamp miss">ハズレ</span></div>
+</div></a><a href="race_202608040807.html" style="color:inherit"><div class="racecard  done   ">
 <div class=rno>7</div>
 <div class=main><div class=ttl>3歳以上1勝クラス <span class=mute style="font-weight:400">13:15</span></div>
 <div class=sub>ダ1800m ・ 11頭 ・ 重 ・ 確定</div>
 <div class=ax>◎<b>7 リーチグローリー</b> 80% <span class="neg">→-着</span>
  &nbsp;○<span>10 エイコーンドリーム</span> 43% <span class="pos">→1着</span></div>
 <div></div></div>
-</div></a><a href="race_202608040808.html" style="color:inherit"><div class="racecard  done ">
+<div class=sb><span class="stamp miss">ハズレ</span></div>
+</div></a><a href="race_202608040808.html" style="color:inherit"><div class="racecard  done  hit ">
 <div class=rno>8</div>
 <div class=main><div class=ttl>3歳以上2勝クラス <span class=mute style="font-weight:400">13:45</span></div>
 <div class=sub>芝1800m ・ 8頭 ・ 稍重 ・ 確定</div>
 <div class=ax>◎<b>4 アーリーハーベスト</b> 95% <span class="pos">→2着</span>
  &nbsp;○<span>7 ウインリベラシオン</span> 30% <span class="neg">→4着</span></div>
 <div></div></div>
-</div></a><a href="race_202608040809.html" style="color:inherit"><div class="racecard flag done ">
+<div class=sb><span class="stamp">的中<small>+110円</small></span></div>
+</div></a><a href="race_202608040809.html" style="color:inherit"><div class="racecard flag done  hit ">
 <div class=rno>9</div>
 <div class=main><div class=ttl>なでしこ賞 <span class=mute style="font-weight:400">14:15</span></div>
 <div class=sub>ダ1400m ・ 9頭 ・ 重 ・ 確定</div>
 <div class=ax>◎<b>9 ユウライクスター</b> 90% <span class="neg">→5着</span>
  &nbsp;○<span>8 ポッドビート</span> 37% <span class="neg">→7着</span></div>
 <div><span class="pill 狙い目">🎯狙い目</span> </div></div>
-</div></a><a href="race_202608040810.html" style="color:inherit"><div class="racecard  done ">
+<div class=sb><span class="stamp">的中<small>+570円</small></span></div>
+</div></a><a href="race_202608040810.html" style="color:inherit"><div class="racecard  done   ">
 <div class=rno>10</div>
 <div class=main><div class=ttl>長岡京S <span class=mute style="font-weight:400">14:50</span></div>
 <div class=sub>芝1400m ・ 15頭 ・ 稍重 ・ 確定</div>
 <div class=ax>◎<b>10 スカイハイ</b> 54% <span class="neg">→5着</span>
  &nbsp;○<span>2 アスミル</span> 28% <span class="pos">→1着</span></div>
 <div></div></div>
-</div></a><a href="race_202608040811.html" style="color:inherit"><div class="racecard  done ">
+<div class=sb><span class="stamp miss">ハズレ</span></div>
+</div></a><a href="race_202608040811.html" style="color:inherit"><div class="racecard  done  hit ">
 <div class=rno>11</div>
 <div class=main><div class=ttl>カシオペアS <span class=mute style="font-weight:400">15:30</span></div>
 <div class=sub>芝1800m ・ 16頭 ・ 稍重 ・ 確定</div>
 <div class=ax>◎<b>11 ジーティーアダマン</b> 81% <span class="pos">→2着</span>
  &nbsp;○<span>13 ガイアメンテ</span> 32% <span class="neg">→6着</span></div>
 <div></div></div>
-</div></a><a href="race_202608040812.html" style="color:inherit"><div class="racecard flag done ">
+<div class=sb><span class="stamp">的中<small>+130円</small></span></div>
+</div></a><a href="race_202608040812.html" style="color:inherit"><div class="racecard flag done  hit ">
 <div class=rno>12</div>
 <div class=main><div class=ttl>3歳以上2勝クラス <span class=mute style="font-weight:400">16:15</span></div>
 <div class=sub>ダ1900m ・ 12頭 ・ 重 ・ 確定</div>
 <div class=ax>◎<b>6 エアアルチーナ</b> 95% <span class="pos">→3着</span>
  &nbsp;○<span>1 ソウルアンドジャズ</span> 29% <span class="neg">→5着</span></div>
 <div><span class="pill 鉄板">🔒鉄板</span> </div></div>
+<div class=sb><span class="stamp">的中<small>+550円</small></span></div>
 </div></a>
 </div>
 <div class=mute style="font-size:12px;padding:0 4px">◎=軸馬(3着内率が最も高い馬) ○=連対候補(軸以外で連対率1位)。%はAI確率(実力モデル×市場)。</div>
-<div class=card style="font-size:11px;color:var(--mute)">本サイトの予想はAI(機械学習)の計算結果で、的中を保証するものではありません。馬券の購入はご自身の判断と責任でお願いします。20歳未満の方は馬券を購入できません。成績は紙上検証(実際には購入していない記録)を含みます。<br>更新 2026-10-25 09:20</div></main>
+<div class=card style="font-size:11px;color:var(--mute)">本サイトの予想はAI(機械学習)の計算結果で、的中を保証するものではありません。馬券の購入はご自身の判断と責任でお願いします。20歳未満の方は馬券を購入できません。成績は紙上検証(実際には購入していない記録)を含みます。<br>更新 2026-10-25 09:21</div></main>
 <nav class=tabs><a href="index.html" class="on">🏇 予想</a><a href="results.html" class="">📊 成績</a><a href="about.html" class="">ℹ️ この予想について</a></nav>
 </body></html>
